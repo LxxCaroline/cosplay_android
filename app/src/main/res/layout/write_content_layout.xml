@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/component_title_normal_righttext" />
+
+    <LinearLayout
+        android:id="@+id/ll_inputPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40px" />
+
+        <TextView style="@style/layout_line_gray" />
+
+        <EditText
+            android:id="@+id/commentEdTx"
+            style="@style/text_dark_mid"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top|left"
+            android:hint="@string/comment_hint"
+            android:inputType="textMultiLine"
+            android:minLines="5"
+            android:padding="@dimen/margin_40px"
+            android:textColorHint="@color/text_gray">
+            <requestFocus />
+            </EditText>
+
+    </LinearLayout>
+
+</LinearLayout>

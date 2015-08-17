@@ -1,0 +1,312 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ecos="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sv_personal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.think.linxuanxuan.ecos.activity.PersonageDetailActivity">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_personDetail_640px_1080px">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@mipmap/img_person_back"
+                    android:gravity="center">
+
+                    <com.think.linxuanxuan.ecos.utils.RoundImageView
+                        android:id="@+id/iv_personage_portrait"
+                        android:layout_width="@dimen/circle_icon_210px"
+                        android:layout_height="@dimen/circle_icon_210px"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/margin_80px"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/bg_female_default"
+                        ecos:circle_color="@color/bg_red"
+                        ecos:showable="true" />
+
+                    <ImageView
+                        android:id="@+id/riv_personage_gender"
+                        android:layout_width="@dimen/circle_icon_50px"
+                        android:layout_height="@dimen/circle_icon_50px"
+                        android:layout_alignBottom="@id/iv_personage_portrait"
+                        android:layout_alignRight="@id/iv_personage_portrait"
+                        android:layout_marginBottom="5dp"
+                        android:background="@mipmap/ic_gender_female" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_personage_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_personage_portrait"
+                        android:layout_marginTop="@dimen/margin_50px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/bt_personage_name"
+                            style="@style/text_dark_max"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_personage_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_tag_36px"
+                        android:layout_below="@id/ll_personage_name"
+                        android:layout_marginTop="@dimen/margin_50px"
+                        android:gravity="center"
+                        android:orientation="horizontal"></LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_personage_attention"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ll_personage_tag"
+                        android:layout_marginTop="@dimen/margin_50px"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/text_gray_mid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="关注："
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <TextView
+                            android:id="@+id/tv_personage_attention"
+                            style="@style/text_pink_mid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <TextView
+                            android:layout_width="@dimen/width_line"
+                            android:layout_height="@dimen/margin_30px"
+                            android:layout_marginLeft="@dimen/margin_20px"
+                            android:layout_marginRight="@dimen/margin_20px"
+                            android:background="@color/bg_gray_dark" />
+
+                        <TextView
+                            style="@style/text_gray_mid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="粉丝："
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                        <TextView
+                            android:id="@+id/tv_personage_fans"
+                            style="@style/text_pink_mid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceSmall" />
+                    </LinearLayout>
+
+
+                    <!--<Button-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/bt_personage_return"-->
+                    <!--android:id="@+id/bt_personage_return"-->
+                    <!--android:background="#ddddff88"-->
+                    <!--android:layout_alignTop="@+id/iv_personage_portrait"-->
+                    <!--android:layout_alignParentLeft="true"-->
+                    <!--android:layout_alignParentStart="true" />-->
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_return"
+                android:layout_width="@dimen/icon_return_50px"
+                android:layout_height="@dimen/icon_return_50px"
+                android:layout_marginTop="@dimen/margin_30px"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:padding="@dimen/margin_20px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_return_red" />
+
+            <LinearLayout
+                android:id="@+id/ll_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/iv_return"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <TextView
+                    style="@style/text_pink_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="编辑" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_big_64px"
+                    android:layout_height="@dimen/icon_big_64px"
+                    android:padding="6dp"
+                    android:src="@mipmap/ic_edit" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_signature_attention"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg_white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_30px">
+
+            <TextView
+                android:id="@+id/tv_personage_description"
+                style="@style/text_pink_mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_20px"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_80px"
+                android:paddingRight="@dimen/margin_80px"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/bg_red_light_light" />
+
+            <LinearLayout
+                android:id="@+id/contactLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_50px"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_attention"
+                    style="@style/text_white_mid"
+                    android:layout_width="@dimen/width_btn_person_180px"
+                    android:layout_height="@dimen/height_btn_person_80px"
+                    android:background="@drawable/bg_person_pink"
+                    android:gravity="center"
+                    android:text="@string/bt_personage_attention" />
+
+                <Button
+                    android:id="@+id/btn_contact"
+                    style="@style/text_pink_mid"
+                    android:layout_width="@dimen/width_btn_person_180px"
+                    android:layout_height="@dimen/height_btn_person_80px"
+                    android:layout_marginLeft="@dimen/margin_60px"
+                    android:background="@drawable/bg_person_white"
+                    android:gravity="center"
+                    android:text="私信" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView style="@style/layout_line_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_label_100px"
+            android:background="@color/bg_gray"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radio_1"
+                    style="@style/rb_center_list_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:text="@string/tab_course" />
+
+                <TextView
+                    style="@style/layout_line_gray_v"
+                    android:layout_marginBottom="@dimen/margin_20px"
+                    android:layout_marginTop="@dimen/margin_20px" />
+
+                <RadioButton
+                    android:id="@+id/radio_2"
+                    style="@style/rb_center_list_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/tab_display" />
+
+                <TextView
+                    style="@style/layout_line_gray_v"
+                    android:layout_marginBottom="@dimen/margin_20px"
+                    android:layout_marginTop="@dimen/margin_20px" />
+
+                <RadioButton
+                    android:id="@+id/radio_3"
+                    style="@style/rb_center_list_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/tab_community" />
+
+                <TextView
+                    style="@style/layout_line_gray_v"
+                    android:layout_marginBottom="@dimen/margin_20px"
+                    android:layout_marginTop="@dimen/margin_20px" />
+
+                <RadioButton
+                    android:id="@+id/radio_4"
+                    style="@style/rb_center_list_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/tab_transaction" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView style="@style/layout_line_gray" />
+
+        <com.think.linxuanxuan.ecos.views.ExtensibleListView
+            android:id="@+id/lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_40px"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0px"
+            android:listSelector="@android:color/transparent" />
+
+        <LinearLayout
+            android:id="@+id/noDataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray"
+            android:paddingLeft="90dp"
+            android:paddingRight="90dp"
+            android:paddingTop="50dp">
+
+            <ImageView
+                android:id="@+id/resultImageView"
+                android:layout_width="200dp"
+                android:layout_height="120dp"
+                android:src="@mipmap/no_data" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

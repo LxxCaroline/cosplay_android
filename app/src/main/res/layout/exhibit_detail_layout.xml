@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ecos="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_white">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/component_title_normal_righttext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title_normal"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title"
+        android:layout_marginBottom="@dimen/workDetailCommentLayoutHeight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/exhibitCoverImgVw"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_cover_670px_1080px"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_30px"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginRight="@dimen/margin_40px"
+                android:layout_marginTop="@dimen/margin_60px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.think.linxuanxuan.ecos.utils.RoundImageView
+                    android:id="@+id/exhibitPersonImgVw"
+                    android:layout_width="@dimen/circle_icon_108px"
+                    android:background="@mipmap/bg_female_default"
+                    android:layout_height="@dimen/circle_icon_108px"
+                    ecos:circle_color="@color/bg_red"
+                    ecos:showable="true"/>
+
+                <TextView
+                    android:id="@+id/exhibitPersonNameTxVw"
+                    style="@style/text_dark_mid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_20px"
+                    android:text=""/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/exhibitFocusBtn"
+                    style="@style/text_white_mid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_btn_focus_70px"
+                    android:background="@drawable/btn_focus_pink"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/margin_40px"
+                    android:paddingRight="@dimen/margin_40px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/exhibitTitleTxVw"
+                style="@style/text_pink_max"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_50px"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginRight="@dimen/margin_40px"
+                android:textColor="@color/bg_red" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_label_100px"
+                android:background="@color/bg_gray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_40px"
+                android:paddingRight="@dimen/margin_40px">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/bg_label" />
+
+                    <TextView
+                        android:id="@+id/tv_otherWorks"
+                        style="@style/text_dark_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_40px"
+                        android:text="内容" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/exhibitTitleContentTxVw"
+                style="@style/text_dark_mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_50px"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginRight="@dimen/margin_40px"
+                android:text=""
+                android:layout_marginTop="@dimen/margin_40px"/>
+
+            <com.think.linxuanxuan.ecos.views.ExtensibleListView
+                android:id="@+id/exhibitLsVw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_20px"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent" />
+
+            <include
+                layout="@layout/item_comment_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.think.linxuanxuan.ecos.views.ExtensibleListView
+                android:id="@+id/exhibitCommentLsVw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_110px"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <include
+            layout="@layout/write_comment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+</RelativeLayout>

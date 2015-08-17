@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ecos="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_30px"
+        android:layout_marginLeft="@dimen/margin_40px"
+        android:layout_marginRight="@dimen/margin_40px"
+        android:background="@drawable/bg_course_item"
+        android:orientation="vertical">
+
+        <!--头像姓名私信 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_item_personInforamtion_180px"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/margin_40px"
+            android:paddingRight="@dimen/margin_40px">
+
+                <com.think.linxuanxuan.ecos.utils.RoundImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="@dimen/circle_icon_108px"
+                    android:layout_height="@dimen/circle_icon_108px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/bg_female_default"
+                    ecos:circle_color="@color/bg_red"
+                    ecos:showable="true"/>
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/text_dark_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_toRightOf="@id/iv_avatar"
+                android:text=""
+                android:layout_alignTop="@id/iv_avatar"/>
+
+            <ImageView
+                android:id="@+id/genderImVw"
+                android:layout_width="@dimen/icon_little_36px"
+                android:layout_height="@dimen/icon_little_36px"
+                android:layout_marginLeft="@dimen/margin_20px"
+                android:src="@mipmap/ic_female_line"
+                android:layout_toRightOf="@id/tv_name"
+                android:layout_alignBottom="@id/tv_name"
+                android:layout_marginBottom="2dp"/>
+            <TextView
+                android:id="@+id/tv_distance"
+                style="@style/text_gray_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_alignLeft="@id/tv_name"
+                android:layout_below="@id/tv_name"
+                android:layout_marginTop="@dimen/margin_10px"/>
+            <TextView
+                android:id="@+id/tv_talk"
+                style="@style/text_white_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_btn_focus_70px"
+                android:paddingLeft="@dimen/margin_40px"
+                android:paddingRight="@dimen/margin_40px"
+                android:background="@drawable/btn_focus_pink"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="私信" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_cover_664px_1000px"
+            android:layout_margin="@dimen/width_line"
+            android:padding="@dimen/width_line">
+
+            <com.think.linxuanxuan.ecos.utils.RoundAngleImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_default"
+                ecos:leftDownRoundHeight="@dimen/margin_20px"
+                ecos:leftDownRoundWidth="@dimen/margin_20px"
+                ecos:rightDownRoundHeight="@dimen/margin_20px"
+                ecos:rightDownRoundWidth="@dimen/margin_20px"
+                ecos:isRightDown="true"
+                ecos:isLeftDown="true"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                style="@style/text_white_max"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_btn_price_92px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/margin_80px"
+                android:background="@drawable/bg_recruition_price"
+                android:gravity="center"
+                android:paddingLeft="@dimen/margin_40px"
+                android:paddingRight="@dimen/margin_40px" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

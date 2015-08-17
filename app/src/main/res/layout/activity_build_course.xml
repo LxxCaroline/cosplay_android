@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?><!--创建教程页面布局-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/component_title_normal_righttext" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_cover_670px_1080px">
+
+                <!--@dimen/height_cover_670px_1080px-->
+                <ImageView
+                    android:id="@+id/iv_course_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:contentDescription="教程封面"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/img_default" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_big_200px"
+                    android:layout_height="@dimen/icon_big_200px"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/ic_camera"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/margin_80px"
+                    android:layout_marginRight="@dimen/margin_50px"/>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/etv_course_title"
+                style="@style/text_dark_max"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginRight="@dimen/margin_40px"
+                android:layout_marginTop="@dimen/margin_40px"
+                android:paddingTop="@dimen/margin_30px"
+                android:paddingBottom="@dimen/margin_10px"
+                android:paddingRight="@dimen/margin_40px"
+                android:background="@null"
+                android:hint="请输入你的教程名称"
+                android:maxLength="30"
+                android:textColorHint="@color/text_gray" />
+            <View
+                style="@style/layout_line_gray"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginRight="@dimen/margin_40px" />
+
+            <com.think.linxuanxuan.ecos.views.ExtensibleListView
+                android:id="@+id/lv_build_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20px"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginRight="@dimen/margin_40px"
+                android:contentDescription="教程列表"
+                android:descendantFocusability="afterDescendants"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_btn_big_120px"
+                android:layout_marginBottom="@dimen/margin_50px"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginRight="@dimen/margin_40px"
+                android:layout_marginTop="@dimen/margin_50px"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_add_step"
+                    style="@style/text_pink_max"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_big_white"
+                    android:text="添加步骤" />
+
+                <Button
+                    android:id="@+id/btn_iss_course"
+                    style="@style/text_white_max"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_40px"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_big_green"
+                    android:text="发布!" />
+            </LinearLayout>
+
+            <View
+                style="@style/layout_line_gray"
+                android:layout_marginBottom="@dimen/margin_80px" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

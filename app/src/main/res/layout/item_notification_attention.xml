@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_item_notification_contact_222px"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin_40px"
+        android:layout_marginRight="@dimen/margin_40px"
+        android:layout_marginBottom="@dimen/margin_30px"
+        android:background="@drawable/bg_course_item"
+        android:paddingRight="@dimen/margin_40px"
+        android:paddingLeft="@dimen/margin_40px"
+        android:orientation="horizontal">
+    <com.think.linxuanxuan.ecos.utils.RoundImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="@dimen/circle_icon_108px"
+        android:layout_height="@dimen/circle_icon_108px"
+        android:src="@drawable/img_default"
+        android:layout_marginRight="@dimen/margin_40px"
+        android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            style="@style/text_dark_mid"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20px"
+            android:text="@string/notification_attention"
+            style="@style/text_dark_mid"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin_40px"
+            android:layout_marginRight="@dimen/margin_40px"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/gap1"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/line_gap_gray"/>
+            <TextView
+                android:id="@+id/tv_stepNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_margin="@dimen/margin_50px"
+                style="@style/text_gray_max"/>
+            <TextView
+                android:id="@+id/gap2"
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/line_gap_gray"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_stepImage"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/margin_40px"
+            android:layout_marginRight="@dimen/margin_40px"
+            android:layout_height="@dimen/height_cover_664px_1000px"
+            android:src="@drawable/img_default"
+            android:scaleType="centerCrop"/>
+        <TextView
+            android:id="@+id/tv_stepText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_40px"
+            android:layout_marginRight="@dimen/margin_40px"
+            android:layout_marginTop="@dimen/margin_50px"
+            android:layout_marginBottom="@dimen/margin_20px"
+            style="@style/text_dark_mid"/>
+    </LinearLayout>
+
+</LinearLayout>

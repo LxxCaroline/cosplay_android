@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+        <attr name="isLeftUp" format="boolean"/>
+        <attr name="isRightUp" format="boolean"/>
+        <attr name="isLeftDown" format="boolean"/>
+        <attr name="isRightDown" format="boolean"/>
+        <attr name="leftUpRoundWidth" format="dimension"/>
+        <attr name="leftUpRoundHeight" format="dimension"/>
+        <attr name="leftDownRoundWidth" format="dimension"/>
+        <attr name="leftDownRoundHeight" format="dimension"/>
+        <attr name="rightUpRoundWidth" format="dimension"/>
+        <attr name="rightUpRoundHeight" format="dimension"/>
+        <attr name="rightDownRoundWidth" format="dimension"/>
+        <attr name="rightDownRoundHeight" format="dimension"/>
+    </declare-styleable>
+</resources>

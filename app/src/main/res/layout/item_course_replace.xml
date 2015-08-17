@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ecos="http://schemas.android.com/apk/res-auto"
+      android:background="@drawable/bg_course_item"
+      android:orientation="vertical"
+      android:layout_marginBottom="@dimen/margin_30px"
+      android:layout_marginLeft="@dimen/margin_40px"
+      android:layout_marginRight="@dimen/margin_40px">
+
+        <!-- 图片-->
+        <ImageView
+            android:id="@+id/pic_dis"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_cover_640px_960px"
+            android:layout_marginLeft="@dimen/margin_20px"
+            android:layout_marginRight="@dimen/margin_20px"
+            android:layout_marginTop="@dimen/margin_20px"
+            android:adjustViewBounds="true"
+            android:gravity="center"
+            android:scaleType="centerCrop"
+            android:background="#cccccc"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin_30px"
+            android:paddingBottom="@dimen/margin_30px"
+            android:paddingLeft="@dimen/margin_40px"
+            android:paddingRight="@dimen/margin_40px">
+
+            <com.think.linxuanxuan.ecos.utils.RoundImageView
+                android:id="@+id/imageViewAuthor"
+                android:layout_width="@dimen/circle_icon_100px"
+                android:layout_height="@dimen/circle_icon_100px"
+                android:src="@mipmap/bg_female_default"
+                ecos:circle_color="@color/bg_red"
+                ecos:showable="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:background="#000000"/>
+            <TextView
+                android:id="@+id/textViewTitle"
+                style="@style/text_pink_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imageViewAuthor"
+                android:layout_marginLeft="@dimen/margin_20px"
+                android:text=""
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/textViewAuthor"
+                style="@style/text_gray_min"
+                android:layout_width="wrap_content"
+                android:layout_alignLeft="@id/textViewTitle"
+                android:layout_below="@id/textViewTitle"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_20px"
+                android:text=""
+                android:textAllCaps="false" />
+            <TextView
+                android:id="@+id/textViewAmz"
+                style="@style/text_pink_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20px"
+                android:layout_alignParentRight="true"
+                android:text="11"
+                android:layout_alignBottom="@id/textViewAuthor"
+                android:textAllCaps="false" />
+
+            <ImageView
+                android:layout_width="@dimen/icon_little_36px"
+                android:layout_height="@dimen/icon_little_36px"
+                android:layout_gravity="right|bottom"
+                android:layout_alignBottom="@id/textViewAmz"
+                android:layout_toLeftOf="@id/textViewAmz"
+                android:src="@mipmap/ic_praise_num" />
+        </RelativeLayout>
+    </LinearLayout>

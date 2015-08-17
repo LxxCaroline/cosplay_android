@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_label_100px"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_course_item"
+        android:layout_marginLeft="@dimen/margin_30px"
+        android:layout_marginRight="@dimen/margin_40px"
+        android:layout_marginTop="@dimen/margin_40px"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="@dimen/icon_little_36px"
+            android:layout_height="@dimen/icon_little_36px"
+            android:src="@mipmap/ic_search_gray_light"
+            android:layout_marginRight="@dimen/margin_20px"/>
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="搜索你喜欢的作品和角色"
+            android:textColorHint="@color/bg_gray_dark"
+            style="@style/text_gray_mid"
+            android:background="@android:color/transparent"
+            android:textColor="@color/bg_gray_dark"/>
+    </LinearLayout>
+</LinearLayout>

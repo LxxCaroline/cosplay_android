@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ecos="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/component_title_normal_righttext" />
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginRight="@dimen/margin_40px"
+                android:layout_marginTop="@dimen/margin_40px"
+                android:background="@drawable/bg_course_item"
+                android:orientation="vertical">
+                <!--头像姓名私信 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingTop="@dimen/margin_20px"
+                    android:paddingBottom="@dimen/margin_20px"
+                    android:paddingLeft="@dimen/margin_40px"
+                    android:paddingRight="@dimen/margin_40px">
+
+                    <LinearLayout
+                        android:id="@+id/ll_author"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.think.linxuanxuan.ecos.utils.RoundImageView
+                            android:id="@+id/iv_avatar"
+                            android:layout_width="@dimen/circle_icon_108px"
+                            android:layout_height="@dimen/circle_icon_108px"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:src="@mipmap/bg_female_default"
+                            ecos:circle_color="@color/bg_red"
+                            ecos:showable="true"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_40px"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                style="@style/text_dark_mid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="@dimen/margin_10px">
+
+                                <TextView
+                                    android:id="@+id/tv_distance"
+                                    style="@style/text_gray_mid"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=""/>
+
+                                <TextView
+                                    android:id="@+id/tv_price"
+                                    style="@style/text_pink_max"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/margin_40px"
+                                    android:text=""/>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_talk"
+                        style="@style/text_white_mid"
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="@dimen/margin_40px"
+                        android:paddingRight="@dimen/margin_40px"
+                        android:layout_height="@dimen/height_btn_focus_70px"
+                        android:background="@drawable/btn_focus_pink"
+                        android:gravity="center"
+                        android:text="私信" />
+                </LinearLayout>
+
+                <TextView style="@style/layout_line_gray" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我是招募标题君"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_detail"
+                    style="@style/text_dark_mid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:layout_marginBottom="@dimen/margin_40px"
+                    android:layout_marginLeft="@dimen/margin_40px"
+                    android:layout_marginRight="@dimen/margin_40px"
+                    android:layout_marginTop="@dimen/margin_40px"
+                    android:lineSpacingExtra="@dimen/spacing_recruite_detail_26" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_label_100px"
+                android:background="@color/bg_gray"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_40px"
+                android:paddingRight="@dimen/margin_40px">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="4dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/bg_label" />
+
+                    <TextView
+                        style="@style/text_dark_max"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_40px"
+                        android:text="相关作品" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.think.linxuanxuan.ecos.views.ExtensibleListView
+                android:id="@+id/lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@android:color/transparent"></com.think.linxuanxuan.ecos.views.ExtensibleListView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

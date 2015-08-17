@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/component_title_normal_righttext" />
+
+    <!-- set the gesture to transparent-->
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gestureColor="@android:color/transparent"
+        android:uncertainGestureColor="@android:color/transparent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/workDetailCommentLayoutHeight"
+                android:background="@color/bg_white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/margin_40px"
+                        android:layout_marginRight="@dimen/margin_40px"
+                        android:layout_marginTop="@dimen/margin_50px"
+                        android:orientation="vertical">
+
+                        <com.android.volley.toolbox.NetworkImageView
+                            android:id="@+id/workDetailImgVw"
+                            android:layout_width="fill_parent"
+                            android:layout_height="@dimen/height_cover_1500px_960px"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:scaleType="fitXY"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_50px"
+                            android:descendantFocusability="beforeDescendants">
+
+                            <include
+                                android:id="@+id/workDetailsPerson"
+                                layout="@layout/person"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"></include>
+
+                            <TextView
+                                android:id="@+id/workDetailDate"
+                                style="@style/text_dark_min"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:text="2015-05-15" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/workDetailDescpTxVw"
+                            style="@style/text_dark_max"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_40px"
+                            android:text="这是我的作品，模仿的对象是某某某，重点是什么什么，希望大家喜欢。" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_80px"
+                            android:layout_marginTop="@dimen/margin_50px"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/icon_little_36px"
+                                android:layout_height="@dimen/icon_little_36px"
+                                android:src="@mipmap/ic_praise_num" />
+
+                            <TextView
+                                android:id="@+id/workDetailFavorTxVw"
+                                style="@style/text_dark_min"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/margin_20px"
+                                android:text="56个赞" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <include layout="@layout/item_comment_title" />
+
+                    <com.think.linxuanxuan.ecos.views.ExtensibleListView
+                        android:id="@+id/workDetailsLsVw"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="@dimen/divider_height" />
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <include
+                layout="@layout/write_comment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+
+
+    </android.gesture.GestureOverlayView>
+</LinearLayout>

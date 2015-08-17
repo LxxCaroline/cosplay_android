@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray_transparent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/height_title_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/makeuper_btn"
+                    android:layout_width="@dimen/icon_big_260px"
+                    android:layout_height="@dimen/icon_big_260px"
+                    android:background="@mipmap/ic_recuite_full_cosmatic"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    style="@style/text_white_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_30px"
+                    android:text="@string/makeuper" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/prop_btn"
+                    android:layout_width="@dimen/icon_big_260px"
+                    android:layout_height="@dimen/icon_big_260px"
+                    android:background="@mipmap/ic_recuite_full_property"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    style="@style/text_white_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_30px"
+                    android:text="@string/prop" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/photography_btn"
+                    android:layout_width="@dimen/icon_big_260px"
+                    android:layout_height="@dimen/icon_big_260px"
+                    android:background="@mipmap/ic_recuite_full_camera"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    style="@style/text_white_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_30px"
+                    android:text="@string/photography" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/backstage_btn"
+                    android:layout_width="@dimen/icon_big_260px"
+                    android:layout_height="@dimen/icon_big_260px"
+                    android:background="@mipmap/ic_recuite_full_effect"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    style="@style/text_white_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_30px"
+                    android:text="@string/backstage" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/costume_btn"
+                    android:layout_width="@dimen/icon_big_260px"
+                    android:layout_height="@dimen/icon_big_260px"
+                    android:background="@mipmap/ic_recuite_full_cloth"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    style="@style/text_white_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_30px"
+                    android:text="@string/costume" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/others_btn"
+                    android:layout_width="@dimen/icon_big_260px"
+                    android:layout_height="@dimen/icon_big_260px"
+                    android:background="@mipmap/ic_recuite_full_other"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    style="@style/text_white_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_30px"
+                    android:text="@string/others" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_btn_big_120px"
+            android:layout_marginBottom="@dimen/margin_60px"
+            android:layout_marginLeft="@dimen/margin_40px"
+            android:layout_marginRight="@dimen/margin_40px"
+            android:layout_marginTop="@dimen/margin_60px"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/icon_big_64px"
+                android:layout_height="@dimen/icon_big_64px"
+                android:padding="@dimen/margin_10px"
+                android:src="@mipmap/ic_recruite_close" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

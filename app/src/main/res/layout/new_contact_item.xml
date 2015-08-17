@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Spinner
+        android:id="@+id/contactTypeSpinner"
+        android:layout_width="@dimen/width_new_activity_text_4"
+        android:layout_height="wrap_content"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/contactDetailEdTx"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        style="@style/text_gray_mid"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center" />
+    </LinearLayout>
+    <TextView style="@style/layout_line_gray"
+        android:layout_marginLeft="@dimen/width_new_activity_text_4"/>
+</LinearLayout>

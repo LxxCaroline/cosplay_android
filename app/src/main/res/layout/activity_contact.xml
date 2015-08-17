@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/component_title_normal_righttext"/>
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bg_gray"
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent">
+    </ListView>
+
+    <TextView style="@style/layout_line_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_40px"
+            android:padding="@dimen/margin_30px"
+            android:lines="1"
+            android:text=""
+            android:hint="先和TA打个招呼吧~"
+            android:textColorHint="@color/bg_gray_dark"
+            style="@style/text_dark_max"
+            android:gravity="center_vertical|left"
+            android:background="@drawable/bg_contact_input"/>
+        <TextView style="@style/layout_line_gray_v"/>
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="@dimen/width_btn_price_216px"
+            android:layout_height="match_parent"
+            android:text="发送"
+            android:gravity="center"
+            style="@style/text_pink_max"/>
+    </LinearLayout>
+
+</LinearLayout>

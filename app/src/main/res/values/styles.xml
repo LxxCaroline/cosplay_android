@@ -1,0 +1,89 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!-- ...and here we setting appcompat’s color theming attrs -->
+    </style>
+
+
+    <!-- 主页面tab按钮样式-->
+    <style name="rb_chat_list_tab">
+        <item name="android:background">@color/bg_red</item>        
+        <item name="android:textSize">@dimen/text_size_tab</item>
+        <item name="android:textColor">@color/txt_color_tab_selector</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>  
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>  
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <!-- 个人中心tab按钮样式-->
+    <style name="rb_center_list_tab">
+        <item name="android:background">@drawable/radio_bg_gray</item>        
+        <item name="android:textSize">@dimen/text_size_36</item>
+        <item name="android:textColor">@color/txt_color_center_tab_selector</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>  
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:button">@null</item>  
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <!-- 个人中心tab按钮样式-->
+    <style name="checkbox_tag">
+        <item name="android:layout_width">@dimen/width_tag_150px</item>
+        <item name="android:layout_height">@dimen/height_tag_54px</item>
+        <item name="android:background">@drawable/checkbox_tag_150px</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/checkbox_tag</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">@dimen/text_size_36</item>
+    </style>
+
+    <!-- 自定义对话框样式-->
+    <style name="customDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+        <!-- 灰度 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <!-- sweet-alert-dialog -->
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+    <style name="dialog_blue_button" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/margin_80px</item>
+        <item name="android:paddingRight">@dimen/margin_80px</item>
+        <item name="android:layout_height">@dimen/height_dialog_button</item>
+        <item name="android:textSize">@dimen/text_size_36</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+        <style name="Dialog_Transparent">
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowIsTranslucent">true</item>
+        </style>
+
+
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white">
+    <include layout="@layout/component_title_normal_righttext"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@mipmap/img_girl"
+            android:layout_height="280dp"
+            android:layout_alignParentBottom="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/margin_80px"
+            android:layout_marginBottom="@dimen/margin_80px"
+            android:src="@mipmap/img_tag_text"
+            android:scaleType="fitCenter"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView style="@style/layout_0dp_width"/>
+                <CheckBox
+                    android:id="@+id/checkbox1"
+                    android:layout_width="@dimen/width_tag_226px"
+                    android:layout_height="@dimen/height_tag_80px"
+                    android:background="@drawable/checkbox_tag"
+                    android:button="@android:color/transparent"
+                    android:text="Coser"
+                    style="@style/text_pink_max"
+                    android:textColor="@color/checkbox_tag"
+                    android:gravity="center"/>
+            <TextView style="@style/layout_0dp_width"/>
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_width="@dimen/width_tag_226px"
+                android:layout_height="@dimen/height_tag_80px"
+                android:background="@drawable/checkbox_tag"
+                android:button="@android:color/transparent"
+                android:text="妆娘"
+                style="@style/text_pink_max"
+                android:textColor="@color/checkbox_tag"
+                android:gravity="center"/>
+            <TextView style="@style/layout_0dp_width"/>
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_width="@dimen/width_tag_226px"
+                android:layout_height="@dimen/height_tag_80px"
+                android:background="@drawable/checkbox_tag"
+                android:button="@android:color/transparent"
+                android:text="摄影湿"
+                style="@style/text_pink_max"
+                android:textColor="@color/checkbox_tag"
+                android:gravity="center"/>
+            <TextView style="@style/layout_0dp_width"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_80px"
+            android:orientation="horizontal">
+            <TextView style="@style/layout_0dp_width"/>
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_width="@dimen/width_tag_226px"
+                android:layout_height="@dimen/height_tag_80px"
+                android:background="@drawable/checkbox_tag"
+                android:button="@android:color/transparent"
+                android:text="后期君"
+                style="@style/text_pink_max"
+                android:textColor="@color/checkbox_tag"
+                android:gravity="center"/>
+            <TextView style="@style/layout_0dp_width"/>
+            <CheckBox
+                android:id="@+id/checkbox5"
+                android:layout_width="@dimen/width_tag_226px"
+                android:layout_height="@dimen/height_tag_80px"
+                android:background="@drawable/checkbox_tag"
+                android:button="@android:color/transparent"
+                android:text="裁缝"
+                style="@style/text_pink_max"
+                android:textColor="@color/checkbox_tag"
+                android:gravity="center"/>
+            <TextView style="@style/layout_0dp_width"/>
+            <CheckBox
+                android:id="@+id/checkbox6"
+                android:layout_width="@dimen/width_tag_226px"
+                android:layout_height="@dimen/height_tag_80px"
+                android:background="@drawable/checkbox_tag"
+                android:button="@android:color/transparent"
+                android:text="道具湿"
+                style="@style/text_pink_max"
+                android:textColor="@color/checkbox_tag"
+                android:gravity="center"/>
+            <TextView style="@style/layout_0dp_width"/>
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

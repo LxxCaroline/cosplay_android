@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/exhibit_lsvw_item_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_cover_664px_1000px"
+        android:layout_marginBottom="@dimen/margin_20px"
+        android:layout_marginLeft="@dimen/margin_40px"
+        android:layout_marginRight="@dimen/margin_40px"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/img_default" />
+
+</LinearLayout>

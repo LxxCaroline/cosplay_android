@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/makeuper_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ll_gray"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/icon_big_200px"
+                android:layout_height="@dimen/icon_big_200px"
+                android:background="@mipmap/ic_recuite_cosmatic"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                style="@style/text_dark_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_50px"
+                android:text="@string/makeuper" />
+        </LinearLayout>
+
+        <View style="@style/layout_line_gray_v" />
+
+        <LinearLayout
+            android:id="@+id/prop_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ll_gray"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/icon_big_200px"
+                android:layout_height="@dimen/icon_big_200px"
+                android:background="@mipmap/ic_recuite_property"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                style="@style/text_dark_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_50px"
+                android:text="@string/prop" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View style="@style/layout_line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/photography_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ll_gray"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/icon_big_200px"
+                android:layout_height="@dimen/icon_big_200px"
+                android:background="@mipmap/ic_recuite_camera"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                style="@style/text_dark_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_50px"
+                android:text="@string/photography" />
+        </LinearLayout>
+
+        <View style="@style/layout_line_gray_v" />
+
+        <LinearLayout
+            android:id="@+id/backstage_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ll_gray"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/icon_big_200px"
+                android:layout_height="@dimen/icon_big_200px"
+                android:background="@mipmap/ic_recuite_effect"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                style="@style/text_dark_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_50px"
+                android:text="@string/backstage" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View style="@style/layout_line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/costume_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/ll_gray"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/icon_big_200px"
+                android:layout_height="@dimen/icon_big_200px"
+                android:background="@mipmap/ic_recuite_cloth"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                style="@style/text_dark_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_50px"
+                android:text="@string/costume" />
+        </LinearLayout>
+
+        <View style="@style/layout_line_gray_v" />
+
+        <LinearLayout
+            android:id="@+id/others_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ll_gray"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/icon_big_200px"
+                android:layout_height="@dimen/icon_big_200px"
+                android:background="@mipmap/ic_recuite_other"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                style="@style/text_dark_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_50px"
+                android:text="@string/others" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/layout_line_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_40px"
+        android:layout_marginRight="@dimen/margin_40px"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/releaseRecruitmentTxVw"
+            style="@style/text_white_max"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_btn_big_120px"
+            android:layout_marginBottom="@dimen/margin_60px"
+            android:layout_marginTop="@dimen/margin_60px"
+            android:background="@drawable/btn_big_pink"
+            android:gravity="center"
+            android:text="我要挂牌" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray">
+    <include layout="@layout/component_title_normal_righttext"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_inputPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_40px" />
+            <TextView style="@style/layout_line_gray"/>
+            <LinearLayout
+                android:id="@+id/ll_male"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ll_white"
+                android:paddingRight="@dimen/margin_40px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+            <TextView
+                android:text="男"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/margin_40px"
+                android:paddingTop="@dimen/margin_40px"
+                android:paddingBottom="@dimen/margin_40px"
+                style="@style/text_dark_mid"
+                android:textColorHint="@color/text_gray"/>
+                <TextView style="@style/layout_0dp_width"/>
+                <ImageView
+                    android:id="@+id/iv_male"
+                    android:layout_width="@dimen/icon_little_36px"
+                    android:layout_height="@dimen/icon_little_36px"
+                    android:src="@mipmap/ic_yes"/>
+            </LinearLayout>
+
+            <TextView style="@style/layout_line_gray"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginRight="@dimen/margin_40px"/>
+            <LinearLayout
+                android:id="@+id/ll_female"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/ll_white"
+                android:paddingRight="@dimen/margin_40px"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="女"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/margin_40px"
+                    android:paddingTop="@dimen/margin_40px"
+                    android:paddingBottom="@dimen/margin_40px"
+                    style="@style/text_dark_mid"
+                    android:textColorHint="@color/text_gray"/>
+                <TextView style="@style/layout_0dp_width"/>
+                <ImageView
+                    android:id="@+id/iv_female"
+                    android:layout_width="@dimen/icon_little_36px"
+                    android:layout_height="@dimen/icon_little_36px"
+                    android:src="@mipmap/ic_yes"/>
+            </LinearLayout>
+
+            <TextView style="@style/layout_line_gray"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

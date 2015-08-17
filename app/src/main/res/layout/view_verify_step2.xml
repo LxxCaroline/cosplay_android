@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aplash_code_notification"
+        android:gravity="center"
+        style="@style/text_white_min"/>
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/text_white_max"
+        android:layout_marginTop="@dimen/splash_item_marginTop"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="@dimen/login_item_width"
+        android:layout_height="@dimen/login_item_height"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_splash_item_white"
+        android:layout_marginTop="@dimen/splash_item_marginTop">
+
+        <EditText
+            android:id="@+id/et_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="请输入你的验证码"
+            android:inputType="number"
+            android:textColorHint="@color/bg_gray"
+            style="@style/text_splash_gray"
+            android:background="@android:color/transparent"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

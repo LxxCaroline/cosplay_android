@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_popup_frame"
+        android:orientation="vertical"
+        android:padding="@dimen/width_line">
+
+        <RadioGroup
+            android:id="@+id/rg_sort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_popup_frame">
+
+            <RadioButton
+                android:id="@+id/rbtn1"
+                style="@style/text_gray_mid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_item_140px"
+                android:background="@drawable/ll_white"
+                android:button="@android:color/transparent"
+                android:paddingLeft="@dimen/margin_40px"
+                android:text="按发布时间排序"
+                android:textColor="@color/radio_sort_text" />
+
+            <RadioButton
+                android:id="@+id/rbtn3"
+                style="@style/text_gray_mid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_item_140px"
+                android:background="@drawable/ll_white"
+                android:button="@android:color/transparent"
+                android:paddingLeft="@dimen/margin_40px"
+                android:text="按点赞数量排序"
+                android:textColor="@color/radio_sort_text" />
+        </RadioGroup>
+    </LinearLayout>
+
+</LinearLayout>

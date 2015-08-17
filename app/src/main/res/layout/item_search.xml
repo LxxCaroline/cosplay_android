@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_40px"
+        android:paddingRight="@dimen/margin_40px"
+        android:paddingTop="@dimen/margin_40px"
+        android:paddingBottom="@dimen/margin_40px"
+        android:gravity="center_vertical"
+        android:background="@drawable/ll_white">
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/text_dark_mid"
+            android:gravity="center_vertical"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="@dimen/icon_big_64px"
+            android:layout_height="@dimen/icon_big_64px"
+            android:src="@mipmap/ic_search_delete"/>
+    </LinearLayout>
+    <TextView style="@style/layout_line_gray"/>
+    </LinearLayout>
+</LinearLayout>

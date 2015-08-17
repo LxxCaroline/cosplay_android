@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <include layout="@layout/component_title_normal_righttext"/>
+
+    <LinearLayout
+        android:id="@+id/rl_shuju"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/photo_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:listSelector="#50000000"
+            android:numColumns="3"
+            android:scrollbars="none"
+            android:horizontalSpacing="2dp"
+            android:verticalSpacing="2dp"/>
+        <!--layout_alignParentTop 与父控件的上边沿对齐-->
+
+        <RelativeLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/bg_white"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_sure"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginRight="@dimen/margin_40px"
+                android:layout_height="@dimen/height_item_120px"
+                android:gravity="center"
+                android:text="确定"
+                style="@style/text_white_max"
+                android:background="@drawable/btn_big_green"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

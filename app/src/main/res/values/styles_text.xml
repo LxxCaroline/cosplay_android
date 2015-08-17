@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_course_type">
+        <item name="android:textSize">@dimen/text_size_36</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="text_course_type_dark">
+        <item name="android:textSize">@dimen/text_size_36</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- 56对应，最大字体-->
+    <style name="text_pink_maxmax">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_red</item>
+    </style>
+
+    <!-- 44对应，大字体-->
+    <style name="text_pink_max">
+        <item name="android:textSize">@dimen/text_size_44</item>
+        <item name="android:textColor">@color/text_red</item>
+    </style>
+    <style name="text_dark_max">
+        <item name="android:textSize">@dimen/text_size_44</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+    <style name="text_gray_max">
+        <item name="android:textSize">@dimen/text_size_44</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+    <style name="text_white_max">
+        <item name="android:textSize">@dimen/text_size_44</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <!-- 36对应，中字体-->
+    <style name="text_pink_mid">
+        <item name="android:textSize">@dimen/text_size_36</item>
+        <item name="android:textColor">@color/text_red</item>
+    </style>
+    <style name="text_dark_mid">
+        <item name="android:textSize">@dimen/text_size_36</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+    <style name="text_gray_mid">
+        <item name="android:textSize">@dimen/text_size_36</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+    <style name="text_white_mid">
+        <item name="android:textSize">@dimen/text_size_36</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+
+    <style name="text_pink_min">
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:textColor">@color/text_red</item>
+    </style>
+    <style name="text_gray_min">
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+    <style name="text_dark_min">
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+    <style name="text_white_min">
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+
+
+    <!-- login & regist text style-->
+    <style name="text_splash_pink">
+        <item name="android:textSize">@dimen/splash_input_text_size</item>
+        <item name="android:textColor">@color/text_red</item>
+    </style>
+    <style name="text_splash_gray">
+        <item name="android:textSize">@dimen/splash_input_text_size</item>
+        <item name="android:textColor">@color/text_splash_input</item>
+    </style>
+    <style name="text_splash_white">
+        <item name="android:textSize">@dimen/splash_input_text_size</item>
+        <item name="android:textColor">@color/bg_white</item>
+    </style>
+</resources>

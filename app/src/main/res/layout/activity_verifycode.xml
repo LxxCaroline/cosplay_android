@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_splath_g"
+    android:id="@+id/main">
+    <include layout="@layout/item_splash_return"/>
+    <include layout="@layout/view_aplash_icon"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/splash_content_height"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|bottom">
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="@dimen/login_item_width"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|bottom">
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_next"
+            android:text="@string/aplash_code"
+            android:gravity="center"
+            style="@style/text_white_max"
+            android:enabled="false"
+            android:layout_marginTop="@dimen/splash_btn_marginTop"
+            android:layout_width="@dimen/login_item_width"
+            android:layout_height="@dimen/login_item_height"
+            android:background="@drawable/btn_splash_red" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/login_item_width"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:enabled="false"
+            style="@style/text_pink_min"
+            android:text=""/>
+    </LinearLayout>
+</LinearLayout>

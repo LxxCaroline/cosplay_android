@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include_title"
+            layout="@layout/component_title_type" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_sort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_sortType"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_item_120px"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/margin_40px">
+
+                    <TextView
+                        android:id="@+id/tv_sortText"
+                        style="@style/text_gray_mid"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/margin_40px"
+                        android:text="按发布时间排序" />
+
+                    <ImageView
+                        android:id="@+id/iv_sortIcon"
+                        android:layout_width="@dimen/icon_little_36px"
+                        android:layout_height="@dimen/icon_little_36px"
+                        android:scaleType="fitCenter"
+                        android:src="@mipmap/ic_choose_gray_down" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="@dimen/width_line"
+                    android:layout_height="match_parent"
+                    android:background="@color/bg_gray_dark" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_search"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="@dimen/margin_30px"
+                        android:layout_marginRight="@dimen/margin_30px"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/ic_find" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView style="@style/layout_line_gray" />
+            <!-- 教程列表-->
+            <com.think.linxuanxuan.ecos.views.XListView
+                android:id="@+id/lv_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/transparent"
+                android:listSelector="@android:color/transparent"
+                android:paddingTop="16dp" />
+
+            <LinearLayout
+                android:id="@+id/noDataLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="90dp"
+                android:paddingRight="90dp">
+
+                <ImageView
+                    android:id="@+id/resultImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/no_data" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.think.linxuanxuan.ecos.views.FloadingButton
+        android:id="@+id/btn_floading"
+        android:layout_width="@dimen/fbtn_icon_180px"
+        android:layout_height="@dimen/fbtn_icon_180px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/fbtn_marginBotton_100px"
+        android:layout_marginRight="@dimen/fbtn_marginRight_50px" />
+</RelativeLayout>

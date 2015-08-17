@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.think.linxuanxuan.ecos.utils.RoundImageView
+        android:id="@+id/personPicImgView"
+        android:layout_width="@dimen/circle_icon_108px"
+        android:layout_height="@dimen/circle_icon_108px"
+        android:layout_marginBottom="@dimen/margin_30px" />
+
+    <TextView
+        android:id="@+id/personNameTxV"
+        android:layout_width="@dimen/personImageView_width"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        style="@style/text_gray_min" />
+
+</LinearLayout>

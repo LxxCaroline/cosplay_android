@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/component_title_normal_righttext" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_40px"
+            android:paddingRight="@dimen/margin_40px">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_item_140px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/avgPriceTxVw"
+                    style="@style/text_dark_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/avgPrice" />
+
+                <EditText
+                    android:id="@+id/priceEdTx"
+                    style="@style/text_dark_mid"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="请输入"
+                    android:inputType="number"
+                    android:textColorHint="@color/text_gray" />
+
+                <TextView
+                    android:id="@+id/priceTxVw"
+                    style="@style/text_dark_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="/小时" />
+
+            </LinearLayout>
+
+            <TextView style="@style/layout_line_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_item_140px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_dark_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/instruction" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/descrpEdTx"
+                style="@style/text_gray_mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_course_item"
+                android:gravity="top|left"
+                android:hint="请输入内容"
+                android:lines="4"
+                android:padding="@dimen/margin_20px"
+                android:textColorHint="@color/text_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_item_140px"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/text_dark_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择封面作品" />
+            </LinearLayout>
+            <!--<com.think.linxuanxuan.ecos.views.ExtensibleListView
+                android:id="@+id/displayListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.think.linxuanxuan.ecos.views.XListView
+        android:id="@+id/displayListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:descendantFocusability="afterDescendants" />
+
+
+</LinearLayout>

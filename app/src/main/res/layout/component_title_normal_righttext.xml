@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rly_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_title_normal"
+    android:background="@color/bg_red">
+
+    <LinearLayout
+        android:id="@+id/lly_left_action"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:contentDescription="标题左侧按钮，含图标和按钮，根据需要进行显示和隐藏，并更改名称"
+        android:gravity="center_vertical"
+        android:minWidth="80dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="@dimen/icon_title_return"
+            android:layout_height="@dimen/icon_title_return"
+            android:layout_marginLeft="@dimen/margin_10px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/btn_return_white" />
+
+
+        <TextView
+            android:id="@+id/tv_left"
+            style="@style/text_white_max"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_left"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/text_white_max"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="标题，每次初始化页面时需要修改成对应的名称"
+        android:gravity="center_vertical"
+        android:text="标题" />
+
+    <LinearLayout
+        android:id="@+id/lly_right_action"
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/margin_40px">
+
+            <TextView
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:id="@+id/tv_right_text"
+                style="@style/text_white_mid"
+                android:layout_width="@dimen/width_title_right_text_160px"
+                android:layout_height="@dimen/height_title_right_text_80px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_title_right_text"
+                android:clickable="false"
+                android:contentDescription="标题右侧按钮，根据需要进行显示或者隐藏，并更改名称"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/txt_title" />/>
+
+            <ImageView
+                android:id="@+id/iv_right_icon"
+                android:layout_width="@dimen/icon_title_right_img"
+                android:layout_height="@dimen/icon_title_right_img"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:contentDescription="标题右侧按钮对应的图标"
+                android:src="@mipmap/ic_title_set"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

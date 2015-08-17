@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_white">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/component_title_normal_righttext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_title_normal"
+        android:layout_alignParentTop="true" />
+
+    <ListView
+        android:id="@+id/commentLsVw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/include_title"
+        android:layout_marginBottom="@dimen/workDetailCommentLayoutHeight"
+        android:dividerHeight="0dp"
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"/>
+
+    <include
+        layout="@layout/write_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"></include>
+
+</RelativeLayout>

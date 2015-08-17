@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 图片高度-->
+    <dimen name="height_cover_160px_240dp">50dp</dimen>
+    <dimen name="width_cover_160px_240dp">75dp</dimen>
+    <dimen name="height_cover_580px_890px">200dp</dimen>
+    <dimen name="height_cover_640px_960px">240dp</dimen>
+    <dimen name="height_cover_664px_1000px">245dp</dimen>
+    <dimen name="height_cover_670px_1080px">250dp</dimen>
+    <dimen name="height_cover_1500px_960px">500dp</dimen>
+    <dimen name="height_cover_380px_270px">135dp</dimen>
+    <dimen name="width_cover_380px_270px">90dp</dimen>
+    <dimen name="width_cover_480px_320px">100dp</dimen>
+    <dimen name="height_cover_480px_320px">150dp</dimen>
+    <dimen name="width_cover_552px_870px">300dp</dimen>
+    <dimen name="height_cover_552px_870px">200dp</dimen>
+    <dimen name="height_banner_610px_1080px">250dp</dimen>
+    <dimen name="height_personDetail_640px_1080px">230dp</dimen> //should not change
+</resources>

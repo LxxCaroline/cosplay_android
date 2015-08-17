@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/component_title_normal_righttext" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/uploadWorksCoverImgVw"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_cover_670px_1080px"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_add_recruite" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="@dimen/margin_80px"
+                android:layout_marginBottom="@dimen/margin_50px"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginTop="@dimen/margin_50px"
+                android:src="@mipmap/img_new_display" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginRight="@dimen/margin_40px"
+                android:orientation="horizontal">
+                <CheckBox
+                    android:id="@+id/other_cb"
+                    style="@style/checkbox_tag"
+                    android:text="@string/coser" />
+                <TextView style="@style/layout_0dp_width" />
+                <CheckBox
+                    android:id="@+id/makeuper_cb"
+                    style="@style/checkbox_tag"
+                    android:text="@string/makeuper" />
+
+                <TextView style="@style/layout_0dp_width" />
+
+                <CheckBox
+                    android:id="@+id/prop_cb"
+                    style="@style/checkbox_tag"
+                    android:text="@string/prop" />
+
+                <TextView style="@style/layout_0dp_width" />
+
+                <CheckBox
+                    android:id="@+id/photography_cb"
+                    style="@style/checkbox_tag"
+                    android:text="@string/photography" />
+
+                <TextView style="@style/layout_0dp_width" />
+
+                <CheckBox
+                    android:id="@+id/backstage_cb"
+                    style="@style/checkbox_tag"
+                    android:text="@string/backstage" />
+
+                <TextView style="@style/layout_0dp_width" />
+
+                <CheckBox
+                    android:id="@+id/costume_cb"
+                    style="@style/checkbox_tag"
+                    android:text="@string/costume" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_item_140px"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/margin_40px"
+                android:paddingRight="@dimen/margin_40px">
+
+                <TextView
+                    style="@style/text_dark_max"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/margin_40px"
+                    android:gravity="bottom"
+                    android:text="@string/title_upload_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/uploadWorksCoverEdTx"
+                        style="@style/text_pink_max"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="bottom"
+                        android:hint="@string/uploadWorks_coverHint"
+                        android:singleLine="true"
+                        android:maxLength="30"
+                        android:textColorHint="@color/text_gray" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="2dp"
+                style="@style/layout_line_gray"
+                android:layout_marginLeft="58dp"/>
+            <TextView
+                style="@style/text_dark_max"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_item_140px"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:gravity="bottom"
+                android:text="@string/title_upload_detail" />
+
+            <EditText
+                android:id="@+id/uploadWorksDescrpEdTx"
+                style="@style/text_dark_mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_40px"
+                android:layout_marginRight="@dimen/margin_40px"
+                android:layout_marginTop="@dimen/margin_20px"
+                android:background="@drawable/bg_course_item"
+                android:hint="@string/add_workDescrp_hint"
+                android:minLines="5"
+                android:gravity="top"
+                android:padding="@dimen/margin_20px"
+                android:textColorHint="@color/text_gray" />
+
+            <com.think.linxuanxuan.ecos.views.ExtensibleListView
+                android:id="@+id/uploadWorksLsVw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="@dimen/divider_height"
+                android:paddingTop="@dimen/margin_30px" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

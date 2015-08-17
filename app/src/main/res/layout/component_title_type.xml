@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rly_title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_title_normal"
+    android:background="@color/bg_red">
+
+    <LinearLayout
+        android:id="@+id/lly_left_action"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:contentDescription="标题左侧按钮，含图标和按钮，根据需要进行显示和隐藏，并更改名称"
+        android:orientation="horizontal"
+        android:paddingRight="@dimen/margin_60px"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="@dimen/icon_title_return"
+            android:layout_height="@dimen/icon_title_return"
+            android:layout_marginLeft="@dimen/margin_10px"
+            android:layout_marginRight="@dimen/margin_40px"
+            android:src="@mipmap/ic_return_white"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/margin_110px"
+        android:paddingRight="@dimen/margin_110px"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_left"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text="妆 娘"
+            style="@style/text_white_max"/>
+        <ImageView
+            android:layout_width="@dimen/icon_little_36px"
+            android:layout_height="@dimen/icon_little_36px"
+            android:layout_marginLeft="@dimen/margin_10px"
+            android:src="@mipmap/ic_choose_up_down"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="标题，每次初始化页面时需要修改成对应的名称"
+        android:gravity="center_vertical"
+        android:text="标题"
+        style="@style/text_white_max" />
+
+    <LinearLayout
+        android:id="@+id/ll_location"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/margin_40px"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="@dimen/icon_big_64px"
+            android:layout_height="@dimen/icon_big_64px"
+            android:src="@mipmap/ic_position_big"/>
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10px"
+            android:text="杭州"
+            style="@style/text_white_max"/>
+    </LinearLayout>
+</RelativeLayout>
+    <TextView style="@style/layout_line_gray"/>
+</LinearLayout>

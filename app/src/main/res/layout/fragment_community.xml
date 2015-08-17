@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_white"
+    android:orientation="vertical"
+    tools:context="com.think.linxuanxuan.ecos.fragment.CommunityFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/bg_white"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_location"
+                style="@style/text_gray_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_item_120px"
+                android:layout_gravity="right"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="不限" />
+
+            <TextView style="@style/layout_line_gray_v"
+                android:layout_height="@dimen/height_item_60px"/>
+
+            <Button
+                android:id="@+id/btn_category"
+                style="@style/text_gray_mid"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_item_120px"
+                android:layout_weight="1"
+                android:background="@color/bg_white"
+                android:text="分类" />
+        </LinearLayout>
+
+        <TextView style="@style/layout_line_gray" />
+
+        <com.think.linxuanxuan.ecos.views.XListView
+            android:id="@+id/lv_campaign"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_gray"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/noDataLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="90dp"
+            android:background="@color/bg_gray"
+            android:paddingRight="90dp">
+
+            <ImageView
+                android:id="@+id/resultImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/no_data" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.think.linxuanxuan.ecos.views.FloadingButton
+        android:id="@+id/btn_floading_community"
+        android:layout_width="@dimen/fbtn_icon_180px"
+        android:layout_height="@dimen/fbtn_icon_180px"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/fbtn_marginBotton_100px"
+        android:layout_marginRight="@dimen/fbtn_marginRight_50px" />
+
+    <ImageView
+        android:id="@+id/iv_show_flag_location"
+        android:layout_width="@dimen/icon_little_36px"
+        android:layout_height="@dimen/icon_little_36px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="@dimen/height_item_51px"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_choose_gray_down" />
+
+    <ImageView
+        android:id="@+id/iv_show_flag_category"
+        android:layout_width="@dimen/icon_little_36px"
+        android:layout_height="@dimen/icon_little_36px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="44dp"
+        android:layout_marginTop="@dimen/height_item_51px"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_choose_gray_down" />
+
+</RelativeLayout>

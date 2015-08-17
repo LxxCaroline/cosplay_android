@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <!-- 主题色 -->
+
+    <!-- 标题 -->
+
+    <drawable name="red">#7f00</drawable>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="green">#7700ff00</drawable>
+    <drawable name="yellow">#77ff00</drawable>
+
+    <drawable name="screen_background_black">#ff000000</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+
+    <color name="solid_red">#f00</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="solid_green">#f0f0</color>
+    <color name="solid_yellow">#ffffff00</color>
+    
+    <color name="line_black">#000000</color>
+    <color name="line_grey">#787878</color>
+    <color name="line_cyan">#6ace92</color>
+
+    <color name="text_normal_color">#787878</color>
+    <color name="text_checked_color">#9878ff</color>
+    
+    <!-- 教程首页type-->
+    <color name="cosmetic">#ea6060</color>
+    <color name="property">#ff8a54</color>
+    <color name="camera">#6ace92</color>
+    <color name="effect">#6493ff</color>
+    <color name="hair">#6db760</color>
+    <color name="cloth">#f36492</color>
+    <color name="idea">#ff9f00</color>
+    <color name="other">#d4a6e6</color>
+
+    <!-- 文字-->
+    <color name="text_dark">#333333</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_red">#f2457d</color>
+
+    <color name="text_white">#ffffff</color>
+    <!--搜索框提示文字颜色-->
+    <color name="text_red_light">#ffc2d5</color>
+    
+    
+    <!-- 背景-->
+    <color name="bg_gray_dark">#d1d1d1</color>
+    <color name="bg_gray">#eff1f0</color>
+    <color name="bg_white">#ffffff</color>
+    <color name="bg_red">#f2457d</color>
+    <color name="bg_red_light_light">#fba1bd</color>
+    <color name="bg_gray_transparent">#cc000000</color>
+    <color name="bg_dark_trans">#bf333333</color>
+
+    <!-- 搜索框填充色-->
+    <color name="bg_red_light">#f6759e</color>
+
+    <color name="btn_green">#41bc40</color>
+
+
+    <!-- 按钮点击效果-->
+    <color name="btn_red_press">#e62d69</color>
+    <color name="btn_white_press">#f6f6f6</color>
+    <color name="btn_red_disable">#bebebe</color>
+    <color name="white_press">#f2f2f2</color>
+
+    <!-- login & regist input text color-->
+    <color name="text_splash_input">#999999</color>
+
+
+
+    <!-- SweetAlertDialog -->
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#D0D0D0</color>
+    <color name="gray_btn_bg_pressed_color">#B6B6B6</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+
+
+</resources>

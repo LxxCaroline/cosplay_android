@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin_20px"
+        android:paddingRight="@dimen/margin_20px"
+        android:paddingTop="@dimen/margin_20px"
+        android:layout_marginBottom="@dimen/margin_30px"
+        android:layout_marginLeft="@dimen/margin_40px"
+        android:layout_marginRight="@dimen/margin_40px"
+        android:background="@drawable/bg_course_item">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_cover_640px_960px">
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/displayCoverImVw"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_default"
+        android:scaleType="centerCrop"/>
+        <ImageView
+            android:id="@+id/checkbox"
+            android:layout_width="@dimen/icon_big_64px"
+            android:layout_height="@dimen/icon_big_64px"
+            android:scaleType="centerCrop"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/margin_50px"
+            android:layout_marginRight="@dimen/margin_50px"/>
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/displayTitleTxVw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_40px"
+                android:layout_marginBottom="@dimen/margin_40px"
+                style="@style/text_pink_max"
+                android:text="" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="@dimen/icon_little_36px"
+                android:layout_height="@dimen/icon_little_36px"
+                android:src="@mipmap/ic_praise"/>
+            <TextView
+                android:id="@+id/displayFavorTxVw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_20px"
+                android:text=""
+                style="@style/text_dark_min"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
